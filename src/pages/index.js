@@ -32,6 +32,7 @@ export default function Home() {
           </a>
         </div>
 
+        <b>ENV</b>
         <div className={styles.grid}>
           <div className={styles.card}>
             <p>API_URL: {process.env.API_URL}</p>
@@ -41,6 +42,19 @@ export default function Home() {
           </div>
           <div className={styles.card}>
             <p>APP_ENV: {process.env.APP_ENV}</p>
+          </div>
+        </div>
+
+        <b>ENV NEXT_PUBLIC</b>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <p>NEXT_PUBLIC_API_URL: {process.env.NEXT_PUBLIC_API_URL}</p>
+          </div>
+          <div className={styles.card}>
+            <p>NEXT_PUBLIC_APP_ENV: {process.env.NEXT_PUBLIC_APP_ENV}</p>
+          </div>
+          <div className={styles.card}>
+            <p>NEXT_PUBLIC_BASE_URL: {process.env.NEXT_PUBLIC_BASE_URL}</p>
           </div>
         </div>
 
