@@ -1,15 +1,17 @@
 'use client'
 
 import Head from 'next/head'
+import { Interceptor } from 'src/utils/env';
 import styles from '../../../styles/Home.module.css'
 
 export const dynamic = "force-dynamic";
 
 export default function Profile() {
+   
     return (
         <div className={styles.container}>
             <Head>
-                <title>Profile</title>
+                <title>Profile </title>
             </Head>
 
             <main className={styles.main}>
