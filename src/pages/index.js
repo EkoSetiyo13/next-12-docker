@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,6 +31,19 @@ export default function Home() {
             <h2>Profile</h2>
           </a>
         </div>
+
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <p>API_URL: {process.env.API_URL}</p>
+          </div>
+          <div className={styles.card}>
+            <p>BASE_URL: {process.env.BASE_URL}</p>
+          </div>
+          <div className={styles.card}>
+            <p>APP_ENV: {process.env.APP_ENV}</p>
+          </div>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
