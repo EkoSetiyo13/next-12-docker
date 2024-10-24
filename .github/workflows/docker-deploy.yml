@@ -11,7 +11,7 @@ on:
 
 env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-  IMAGE_NAME: nextjs-app
+  IMAGE_NAME: next-example-12
 
 jobs:
   build-and-push:
