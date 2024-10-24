@@ -9,7 +9,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1>Home Page</h1>
+                <h1>Home Page : {process.env.BASE_URL}</h1>
                 <a href="/">Back to Home</a>
             </main>
         </div>
