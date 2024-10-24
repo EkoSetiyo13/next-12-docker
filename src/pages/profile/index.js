@@ -13,7 +13,7 @@ export default function Profile() {
             </Head>
 
             <main className={styles.main}>
-                <h1>Profile Page : {process.env.BASE_URL}</h1>
+                <h1>Profile Page : {process.env.NEXT_PUBLIC_API_URL}</h1>
                 <a href="/">Back to Home</a>
             </main>
         </div>
