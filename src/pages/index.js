@@ -2,6 +2,7 @@
 
 import Head from 'next/head'
 import Image from 'next/image'
+import { env } from 'src/utils/env';
 import styles from '../../styles/Home.module.css'
 
 export const dynamic = "force-dynamic";
@@ -61,6 +62,18 @@ export default function Home() {
             <p>NEXT_PUBLIC_BASE_URL: {process.env.NEXT_PUBLIC_BASE_URL}</p>
           </div>
         </div>
+
+        <div>
+      <h2>ENV</h2>
+      <div>API_URL: {env.API_URL}</div>
+      <div>BASE_URL: {env.BASE_URL}</div>
+      <div>APP_ENV: {env.APP_ENV}</div>
+
+      <h2>ENV NEXT_PUBLIC</h2>
+      <div>NEXT_PUBLIC_API_URL: {env.NEXT_PUBLIC_API_URL}</div>
+      <div>NEXT_PUBLIC_BASE_URL: {env.NEXT_PUBLIC_BASE_URL}</div>
+      <div>NEXT_PUBLIC_APP_ENV: {env.NEXT_PUBLIC_APP_ENV}</div>
+    </div>
 
       </main>
 

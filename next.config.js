@@ -4,6 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   staticPageGenerationTimeout: 1000,
+  output: "standalone",
   env: {
     API_URL: process.env.API_URL,
     BASE_URL: process.env.BASE_URL,
